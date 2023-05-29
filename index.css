@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor1: #387876;
+    --cor2: #99958f;
+    --cor3: #594b3b;
+    --cor4: #60CCC8;
+    --cor5: #183635;
+
+    --fonte-padrao: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: var(--cor5);
+}
+
+main {
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    max-width: 1000px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+h3 {
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.input-texto {
+    border: 3px solid var(--cor1);
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
+
+#container-titulo,
+#container-autor {
+    margin-right: 20px;
+    width: 250px;
+}
+
+#label-lido,
+#label-favorito,
+#label-lido-pesquisa,
+#label-favorito-pesquisa {
+    display: block;
+}
+
+#container-lido,
+#container-favorito,
+#container-lido-pesquisa,
+#container-favorito-pesquisa {
+    width: 100px;
+}
+
+button {
+    margin: 10px 0 0 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: var(--cor1);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor4);
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: var(--cor2);
+    transition: 0.2s;
+}
+
+#inputs-pesquisa {
+    display: flex;
+    justify-content: center;
+}
+
+#container-texto-pesquisa {
+    width: 400px;
+    display: flex;
+}
+
+select {
+    border: 3px solid var(--cor1);
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
+
+#pesquisa {
+    padding-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#container-pesquisa {
+    margin-right: 20px;
+    width: 400px;
+}
+
+table {
+    margin: auto;
+    background-color: var(--cor2);
+    color: white;
+    min-width: 500px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 3px solid var(--cor2);
+    padding: 10px;
+    background-color: var(--cor3);
+}
+
+tr {
+    border-bottom: 2px solid var(--cor3);
+}
+
+td {
+    padding: 5px;
+    min-width: 100px;
+}
+
+table button {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    width: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor1);
+    transition: 0.2s;
+}
+
+footer a:active {
+    color: var(--cor2);
+    transition: 0.2s;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros de Livros</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Cadastros de livros</h1>
+            <h3>Cadastre aqui seus livros pessoais.</h3>
+        </header>
+
+        <form>
+            <div id="container-titulo">
+                <label id="label-titulo" for="input-titulo">Título do livro:</label>
+                <input id="input-titulo" class="input-texto" type="text" placeholder="Escreva o título do livro" />
+            </div>
+
+            <div id="container-autor">
+                <label id="label-autor" for="input-autor">Autor:</label>
+                <input id="input-autor" class="input-texto" type="text" placeholder="Escreva o autor do livro" />
+            </div>
+
+            <div id="container-lido">
+                <label id="label-lido" for="input-lido">Lido</label>
+                <select id="input-lido">
+                    <option value="selecione" hidden="hidden">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div id="container-favorito">
+                <label id="label-favorito" for="input-favorito">Favorito</label>
+                <select id="input-favorito">
+                    <option value="selecione" hidden="hidden">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <button id="botao-cadastro" type="submit">Cadastrar</button>
+        </form>
+
+        <div id="pesquisa">
+            <h4>Encontre aqui seus livros</h4>
+            <form id="inputs-pesquisa">
+
+                <div id="container-pesquisa">
+                    <label id="label-pesquisa" for="input-pesquisa">Pesquise:</label>
+                    <input id="input-pesquisa" class="input-texto" type="text"
+                        placeholder="Pesquise por título ou autor do livro" />
+                </div>
+
+                <div id="container-lido-pesquisa">
+                    <label id="label-lido-pesquisa" for="input-lido-pesquisa">Lido</label>
+                    <select id="input-lido-pesquisa">
+                        <option value="selecione" hidden="hidden">Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div id="container-favorito">
+                    <label id="label-favorito-pesquisa" for="input-favorito-pesquisa">Favorito</label>
+                    <select id="input-favorito-pesquisa">
+                        <option value="selecione" hidden="hidden">Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <button id="botao-pesquisa" type="submit">Pesquisar</button>
+                <button id="botao-limpar">Limpar pesquisa</button>
+            </form>
+            <table id="resultado-pesquisa">
+            </table>
+        </div>
+    </main>
+</body>
+
+<footer>
+    Todos os direitos reservados.<a href="https://github.com/richard7dias" target="_blank"> Richard Oliveira </a> , 2023.
+</footer>
+
+</html>
